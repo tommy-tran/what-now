@@ -94,7 +94,7 @@ export default function FiltersPanel({ initialFilters }: Props) {
                     key={b.toString()}
                     type="button"
                     aria-pressed={selected}
-                    onClick={() => setBudget(b as any)}
+                    onClick={() => setBudget(b as Cost | "any")}
                     className={`px-3 py-1.5 rounded-xl border text-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-white/80 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-900 ${
                       selected ? "bg-white text-black border-white" : "border-neutral-700 hover:border-neutral-500"
                     }`}
